@@ -1,8 +1,9 @@
+
+#Days to seconds
 dys = input("Number of Days: ")
 dys = float(dys)
 
-sec = dys * 24 * 60 * 60
+ans = dys * 24 * 60 * 60
 
-ans = print("Answer : {sec}")
-
+print(f"Answer: {int(ans)}")
 

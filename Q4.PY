@@ -1,8 +1,4 @@
-# Question 4: Check if a given character is uppercase or lowercase using functions
-
-
-def check_case(char):
-    """Determines if a given character is uppercase, lowercase, or non-alphabetic."""
+def cc(char):
     if char.isupper():
         return "uppercase"
     elif char.islower():
@@ -10,14 +6,10 @@ def check_case(char):
     else:
         return "neither (it is not an alphabetic letter)"
 
+usin = input("Enter a single character: ")
 
-# Main program flow
-# Ask the user to enter a single character
-user_input = input("Enter a single character: ")
-
-# Check if the user entered exactly one character
-if len(user_input) == 1:
-    result = check_case(user_input)
-    print(f"The character '{user_input}' is {result}.")
+if len(usin) == 1:
+    result = cc(usin)
+    print(f"The character '{usin}' is {result}.")
 else:
     print("Error: Please enter exactly one character.")
